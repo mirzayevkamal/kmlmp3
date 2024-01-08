@@ -1,4 +1,7 @@
 {
   "name": "mp3app",
-  "displayName": "mp3app"
+  "displayName": "mp3app",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-1189765057441007~4561809925"
+  }
 }

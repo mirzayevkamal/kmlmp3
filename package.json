@@ -10,8 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^1.6.5",
     "react": "18.2.0",
-    "react-native": "0.73.1"
+    "react-native": "0.73.1",
+    "react-native-asset": "^2.1.1",
+    "react-native-google-mobile-ads": "^12.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
