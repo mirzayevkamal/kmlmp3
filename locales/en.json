@@ -12,5 +12,8 @@
   "INPUT_TEXT": "Enter video URL",
   "CLICK_TO_DOWNLOAD": "Click to download",
   "FILE_EXISTS_TEXT": "This file is already exist in Downloads folder",
-  "FILE_EXISTS_TITLE": "File already exists"
+  "FILE_EXISTS_TITLE": "File already exists",
+  "DOWNLOAD_FAILED_TITLE": "Recommended download method",
+  "PROCEED_WITH_CHROME": "We recommend downloading this music through Web browser",
+  "OK": "OK"
 }

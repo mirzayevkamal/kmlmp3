@@ -12,5 +12,8 @@
   "INPUT_TEXT": "Videonun linkini girin",
   "CLICK_TO_DOWNLOAD": "İndirmek için tıklayın",
   "FILE_EXISTS_TEXT": "Bu müzik İndirilenler klasöründe mevcut.",
-  "FILE_EXISTS_TITLE": "Dosya mevcut"
+  "FILE_EXISTS_TITLE": "Dosya mevcut",
+  "DOWNLOAD_FAILED_TITLE": "Önerilen indirme yöntemi",
+  "PROCEED_WITH_CHROME": "Bu müziği Web tarayıcısı aracılığıyla indirmenizi öneririz",
+  "OK": "TAMAM"
 }
