@@ -1,5 +1,5 @@
 {
-  "name": "mp3app",
+  "name": "ytmuzik",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,10 +10,16 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.21.0",
+    "@react-native-firebase/analytics": "^18.7.3",
+    "@react-native-firebase/app": "^18.7.3",
     "axios": "^1.6.5",
+    "i18n-js": "^4.3.2",
+    "lodash.memoize": "^4.1.2",
     "react": "18.2.0",
     "react-native": "0.73.1",
     "react-native-asset": "^2.1.1",
+    "react-native-fs": "^2.20.0",
     "react-native-google-mobile-ads": "^12.8.0"
   },
   "devDependencies": {
@@ -24,6 +30,7 @@
     "@react-native/eslint-config": "^0.73.1",
     "@react-native/metro-config": "^0.73.2",
     "@react-native/typescript-config": "^0.73.1",
+    "@types/lodash.memoize": "^4.1.9",
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",

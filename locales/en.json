@@ -1,0 +1,16 @@
+{
+  "MAIN_TITLE": "Download your favorite music!",
+  "MAIN_DESCRIPTION": "Paste Youtube link to convert your video to MP3",
+  "NOT_CONVERTED_YET_TEXT": "You will see your MP3 here after conversion",
+  "CONVERT_TO_MP3": "Convert to MP3",
+  "DOWNLOAD": "Download",
+  "UNTITLED": "Untitled",
+  "DOWNLOAD_SUCCESS": "Music downloaded successfully",
+  "DOWNLOAD_SUCCESS_TEXT": "Downloaded music was added to `Downloads` folder",
+  "CLOSE": "Close",
+  "INVALID_URL_ERROR": "Please enter a valid Youtube video URL",
+  "INPUT_TEXT": "Enter video URL",
+  "CLICK_TO_DOWNLOAD": "Click to download",
+  "FILE_EXISTS_TEXT": "This file is already exist in Downloads folder",
+  "FILE_EXISTS_TITLE": "File already exists"
+}

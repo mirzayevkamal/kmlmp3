@@ -1,6 +1,15 @@
 import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
+import i18n from '../i18n';
 
-const MusicInfo = ({title, onPress}: {title?: string, onPress?: () => void}) => {
+const MusicInfo = ({
+  title,
+  onPress,
+  children
+}: {
+  title?: string;
+  onPress?: () => void;
+  children?: React.ReactNode;
+}) => {
   return (
     <Pressable onPress={onPress} style={styles.imageContainer}>
       <View style={styles.imageBg}>
@@ -11,8 +20,9 @@ const MusicInfo = ({title, onPress}: {title?: string, onPress?: () => void}) => 
       </View>
       <View style={styles.detailsContainer}>
         <Text style={styles.musicTitle}>{title?.slice(0, 40) + '...'}</Text>
-        <Text style={styles.musicDesc}>İndirmek için tıklayın</Text>
+        <Text style={styles.musicDesc}>{i18n.t('CLICK_TO_DOWNLOAD')}</Text>
       </View>
+      {children}
     </Pressable>
   );
 };

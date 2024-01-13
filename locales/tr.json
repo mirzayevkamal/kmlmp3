@@ -1,0 +1,16 @@
+{
+  "MAIN_TITLE": "Favori Muziğinizi hızlıca indirin!",
+  "MAIN_DESCRIPTION": "Youtube videonuzu müziğe çevirmek için video linkini girin.",
+  "NOT_CONVERTED_YET_TEXT": "Çevirmeden sonra müziğiniz burada gözükecek.",
+  "CONVERT_TO_MP3": "MP3-e çevir",
+  "DOWNLOAD": "İndir",
+  "UNTITLED": "Başlıksız",
+  "DOWNLOAD_SUCCESS": "Müzik başarıyla indirildi",
+  "DOWNLOAD_SUCCESS_TEXT": "Müzik `İndirlenler` klasörüne eklendi.",
+  "CLOSE": "Kapat",
+  "INVALID_URL_ERROR": "Lütfen geçerli bir YouTube video URLsi girin",
+  "INPUT_TEXT": "Videonun linkini girin",
+  "CLICK_TO_DOWNLOAD": "İndirmek için tıklayın",
+  "FILE_EXISTS_TEXT": "Bu müzik İndirilenler klasöründe mevcut.",
+  "FILE_EXISTS_TITLE": "Dosya mevcut"
+}

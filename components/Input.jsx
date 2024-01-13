@@ -1,8 +1,13 @@
 import {StyleSheet, TextInput} from 'react-native';
+import i18n from '../i18n';
 
 const Input = ({...props}) => {
   return (
-    <TextInput placeholder="Video URL girin" style={styles.input} {...props} />
+    <TextInput
+      placeholder={i18n.t('INPUT_TEXT')}
+      style={styles.input}
+      {...props}
+    />
   );
 };
 
