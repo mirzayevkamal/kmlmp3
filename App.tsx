@@ -4,6 +4,7 @@ import {
   Alert,
   Image,
   Keyboard,
+  Linking,
   Pressable,
   SafeAreaView,
   ScrollView,
@@ -130,6 +131,20 @@ function App(): React.JSX.Element {
             },
             () => {
               setDownloadLoading(false);
+              Alert.alert(
+                i18n.t('DOWNLOAD_FAILED_TITLE'),
+                i18n.t('PROCEED_WITH_CHROME'),
+                [
+                  {
+                    text: i18n.t('OK'),
+                    onPress: () => {
+                      Linking.openURL(
+                        musicData.link || musicData.downloadUrl || '',
+                      );
+                    },
+                  },
+                ],
+              );
               analytics().logEvent('download_error');
             },
           );
@@ -301,22 +316,23 @@ function App(): React.JSX.Element {
         <Text style={mainStyles.errorText}>{error}</Text>
 
         {isLoading && <ActivityIndicator style={mainStyles.loading} />}
-        {musicConverted ? (
-          <MusicInfo
-            onPress={downloadMusic}
-            title={musicData?.title || `${i18n.t('UNTITLED')}`}
-            children={
-              downloadLoading ? (
-                <ActivityIndicator style={mainStyles.downloadLoadingStyle} />
-              ) : null
-            }
-          />
-        ) : (
-          <Text style={mainStyles.noVideoText}>
-            {i18n.t('NOT_CONVERTED_YET_TEXT')}
-          </Text>
-        )}
-
+        <View>
+          {musicConverted ? (
+            <MusicInfo
+              onPress={downloadMusic}
+              title={musicData?.title || `${i18n.t('UNTITLED')}`}
+              children={
+                downloadLoading ? (
+                  <ActivityIndicator style={mainStyles.downloadLoadingStyle} />
+                ) : null
+              }
+            />
+          ) : (
+            <Text style={mainStyles.noVideoText}>
+              {i18n.t('NOT_CONVERTED_YET_TEXT')}
+            </Text>
+          )}
+        </View>
         <Pressable
           onPress={() => {
             if (musicConverted) {

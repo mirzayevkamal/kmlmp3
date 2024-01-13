@@ -33,7 +33,6 @@ export const downloadFile = async (
     Alert.alert(i18n.t('FILE_EXISTS_TITLE'), i18n.t('FILE_EXISTS_TEXT'), [
       {text: 'Kapat', onPress: () => console.log('OK Pressed')},
     ]);
-    errorCb();
   } else {
     RNFS.downloadFile({
       fromUrl: musicData.link || musicData.downloadUrl || '',

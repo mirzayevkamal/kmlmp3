@@ -31,6 +31,7 @@ export default MusicInfo;
 
 const styles = StyleSheet.create({
   imageContainer: {
+    width: 'auto',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
@@ -43,14 +44,14 @@ const styles = StyleSheet.create({
     shadowRadius: 3,
     elevation: 55,
     margin: 24,
-    gap: 16,
+    gap: 8,
   },
   musicTitle: {
     fontSize: 15,
     fontFamily: 'Poppins-Bold',
     color: '#080C2F',
-    maxWidth: 200,
-    maxHeight: 46,
+    width: 'auto',
+    flexWrap: 'wrap',
   },
   musicDesc: {
     fontSize: 14,
@@ -68,5 +69,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
     gap: 4,
+    width: 'auto',
+    flex: 1
   },
 });
